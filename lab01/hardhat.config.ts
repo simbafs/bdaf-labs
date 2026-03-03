@@ -1,8 +1,11 @@
+import hardhatEthersPlugin from "@nomicfoundation/hardhat-ethers";
 import hardhatToolboxMochaEthersPlugin from "@nomicfoundation/hardhat-toolbox-mocha-ethers";
 import { configVariable, defineConfig } from "hardhat/config";
 
+console.log("Loaded hardhat-ethers plugin:", hardhatEthersPlugin);
+
 export default defineConfig({
-  plugins: [hardhatToolboxMochaEthersPlugin],
+  plugins: [hardhatToolboxMochaEthersPlugin, hardhatEthersPlugin],
   solidity: {
     profiles: {
       default: {
@@ -20,7 +23,7 @@ export default defineConfig({
     },
   },
   networks: {
-    hardhatMainnet: {
+    default: {
       type: "edr-simulated",
       chainType: "l1",
     },

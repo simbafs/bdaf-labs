@@ -14,6 +14,9 @@ importers:
       '@nomicfoundation/hardhat-ignition':
         specifier: ^3.0.8
         version: 3.0.8(@nomicfoundation/hardhat-verify@3.0.11(hardhat@3.1.10))(hardhat@3.1.10)
+      '@nomicfoundation/hardhat-toolbox':
+        specifier: ^7.0.0
+        version: 7.0.0
       '@nomicfoundation/hardhat-toolbox-mocha-ethers':
         specifier: ^3.0.3
         version: 3.0.3(969ea2b95988029113eda351421498be)
@@ -397,6 +400,9 @@ packages:
       ethers: ^6.14.0
       hardhat: ^3.0.0
       mocha: ^11.0.0
+
+  '@nomicfoundation/hardhat-toolbox@7.0.0':
+    resolution: {integrity: sha512-pMoxUU0WWxXv5zkE6mm3JZcvLN94TCax+NVZv5TMscnfwQ42lm+qEAnNxuGNneFbo8JGbHu1B6aEzV08bhmI3w==}
 
   '@nomicfoundation/hardhat-typechain@3.0.3':
     resolution: {integrity: sha512-RjaL94yMpGpKgQDIjD+B1druNboFWWlq609b7bmKOexsCIrxpMQ0+zY7VNvgjv3g9L0a+dIOxalm37/m60rsng==}
@@ -1570,6 +1576,8 @@ snapshots:
       ethers: 6.16.0
       hardhat: 3.1.10
       mocha: 11.7.5
+
+  '@nomicfoundation/hardhat-toolbox@7.0.0': {}
 
   '@nomicfoundation/hardhat-typechain@3.0.3(@nomicfoundation/hardhat-ethers@4.0.5(hardhat@3.1.10))(ethers@6.16.0)(hardhat@3.1.10)(typescript@5.8.3)':
     dependencies:
