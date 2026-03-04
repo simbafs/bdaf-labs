@@ -25,4 +25,5 @@ $ npm run hardhat test
 
 # Framework used
 
-hardhat
+nodejs v25.6.1
+hardhat v3.1.10
